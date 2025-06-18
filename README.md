@@ -1,11 +1,11 @@
 PROJECT Website shop quần áo
-Thông Tin Sinh Viên
-Họ và tên: Nguyễn Quang Huy
-Mã sinh viên: 23010731
-Lớp: K17_CNTT-8
-Môn học: Thiết kế Web nâng cao (COUR01.TH4)
-Giới thiệu Project
-đây là project về website bán quần áo mang đến trải nghiệm mua sắm hiện đại, tiện lợi và nhanh chóng.
+ Thông Tin Sinh Viên
+ Họ và tên: Nguyễn Quang Huy
+ Mã sinh viên: 23010731
+ Lớp: K17_CNTT-8
+ Môn học: Thiết kế Web nâng cao (COUR01.TH4)
+ Giới thiệu Project
+ đây là project về website bán quần áo mang đến trải nghiệm mua sắm hiện đại, tiện lợi và nhanh chóng.
 
 Chức năng chính
 - Chức năng của Admin:
