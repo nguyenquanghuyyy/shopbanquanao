@@ -1,32 +1,36 @@
-# Dockerfile
-
 FROM php:8.2-apache
 
-# Cài các thư viện cần thiết
+# Cài các thư viện cần thiết cho Laravel
 RUN apt-get update && apt-get install -y \
     libzip-dev zip unzip git curl npm \
     && docker-php-ext-install pdo pdo_mysql zip
 
-# Bật mod_rewrite cho Laravel routing
+# Bật rewrite module để Laravel routing hoạt động
 RUN a2enmod rewrite
 
-# Đặt thư mục làm việc
-WORKDIR /var/www/html
+# Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# Copy mã nguồn vào container
+# Laravel sẽ được đặt tại /var/www
+WORKDIR /var/www
+
+# Copy toàn bộ source code vào container
 COPY . .
 
-# Cài Composer
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
-RUN npm install && npm run build
-# Cài gói PHP Laravel
+# Laravel chạy trong thư mục public, sửa cấu hình Apache lại cho đúng
+RUN sed -i 's|/var/www/html|/var/www/public|g' /etc/apache2/sites-available/000-default.conf
+
+# Cài thư viện frontend nếu có (vite, tailwind...)
+RUN npm install && npm run build || true
+
+# Cài các gói PHP bằng composer
 RUN composer install --no-dev --optimize-autoloader
 
-# Gán quyền cho Laravel
-RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
+# Gán quyền ghi cho Laravel
+RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
 
-# Mở port 80 (web chạy)
+# Nếu bạn muốn generate key tại đây luôn (nếu chưa có sẵn)
+# RUN php artisan key:generate
+
 EXPOSE 80
-
-# Khởi động Apache
 CMD ["apache2-foreground"]
