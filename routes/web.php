@@ -15,10 +15,7 @@ use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Admin\OrderController as AdminOrderController;
 use App\Http\Controllers\Admin\ProductController as AdminProductController;
 use App\Http\Controllers\Admin\UserController as AdminUserController;
-/* Route::get('/', function () {
-    return view('welcome');
-});
-*/
+
 Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {
     Route::resource('products', ProductController::class);
     Route::resource('users',  UserController::class);
@@ -55,7 +52,7 @@ Route::get('register', [AuthController::class, 'showRegisterForm'])->name('regis
 Route::post('register', [AuthController::class, 'register'])->name('register.post');
 Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 
-// Dashboard cho từng role
+
 Route::middleware(['auth', 'admin'])->get('admin/dashboard', function () {
     return view('admin.dashboard');
 })->name('admin.dashboard');
