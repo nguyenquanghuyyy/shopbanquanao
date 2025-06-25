@@ -86,7 +86,7 @@ php artisan serve
 ## : Sơ đồ 
 
 ### :file_cabinet: Sơ đồ cấu trúc
-![Sơ đồ cấu trúc](Img/db.png)
+![Sơ đồ cấu trúc](IMG/class diagram.png)
 
 #### 1. Các bảng chính
 
