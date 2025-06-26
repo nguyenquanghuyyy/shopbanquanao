@@ -112,21 +112,18 @@ php artisan serve
 
 ### : Sơ đồ thuật toán
 
-![Sơ đồ cấu trúc](Img)
-
----
-
 - Admin quản lý sản phẩm (CRUD)  
-  ![Quản lý sản phẩm](Im)
+  ![Quản lý sản phẩm](IMG/adminCRUDsanpham.png)
 - Admin quản lý tài khoản (CRUD)  
-  ![Quản lý tài khoản](Im)
+  ![Quản lý tài khoản](IMG/adminCRUDtaikhoan.png)
 - Admin quản lý danh sách đơn hàng  
-  ![Quản lý danh sách đơn hàng](Im)
+  ![Quản lý danh sách đơn hàng](IMG/adminquanlydonhang)
 - User xem sản phẩm  
-  ![User xem sản phẩm](Im)
+  ![User xem sản phẩm](IMG/userxemsanpham.png)
 - User mua hàng, đặt hàng, thanh toán  
-  ![User mua hàng](Im)
-- 
+  ![User mua hàng](IMG/thaotacdathang.png)
+- Đăng nhập, đăng xuát
+  ![đăng nhập, đăng xuất](IMG/dangnhap.png)
 
 ---
 
@@ -143,11 +140,11 @@ php artisan serve
 ### Các Thành Phần Chính
 
 - **Controllers**  
-  ![Controllers](Im)
+  ![Controllers](IMG/controller.png)
 - **Models**  
-  ![Models](Im)
+  ![Models](IMG/model.png)
 - **Views**  
-  ![Views](Im)
+  ![Views](IMG/view)
 
 
 ### :globe_with_meridians: Routes
@@ -220,37 +217,31 @@ Route::middleware(['auth', 'admin'])->get('admin/dashboard', function () {
 1. Giao diện Đăng nhập/ Đăng ký
 
 <div style="display: flex; gap: 16px;">
-  <img src="Im style="width:48%; height:320px; object-fit:cover; border:1px solid #ccc;">
-  <img src="Im" style="width:48%; height:320px; object-fit:cover; border:1px solid #ccc;">
+  <img src="IMG/dangnhapp.png style="width:48%; height:320px; object-fit:cover; border:1px solid #ccc;">
+  <img src="IMG/dangki.png" style="width:48%; height:320px; object-fit:cover; border:1px solid #ccc;">
 </div>
 
 2. Giao diện của Admin  
-- Thống kê  
-  <img src="Im" style="width:80%; display:block; margin:auto;">
 - Quản lý tài khoản  
-  <img src="Im" style="width:80%; display:block; margin:auto;">
+  <img src="IMG/quanlynguoidungAdmin" style="width:80%; display:block; margin:auto;">
 - Quản lý đơn hàng  
-  <img src="Im" style="width:80%; display:block; margin:auto;">
+  <img src="IMG/quanlydonhangAdmin" style="width:80%; display:block; margin:auto;">
 - Quản lý sản phẩm  
-  <img src="Im" style="width:80%; display:block; margin:auto;">
-- Quản lý danh mục  
-  <img src="Im" style="width:80%; display:block; margin:auto;">
-- Quản lý thông báo  
-  <img src="Im" style="width:80%; display:block; margin:auto;">
+  <img src="IMG/quanlysanphamAdmin" style="width:80%; display:block; margin:auto;">
+- Profile
+  <img src="IMG/profileAdmin" style="width:80%; display:block; margin:auto;">
 
 3. Giao diện của User  
 - Trang chủ  
-  <img src="Im" style="width:80%; display:block; margin:auto;">
-- Trang shop  
-  <img src="Im" style="width:80%; display:block; margin:auto;">
-- Trang blog  
-  <img src="Im" style="width:80%; display:block; margin:auto;">
-- Trang contact  
-  <img src="Im" style="width:80%; display:block; margin:auto;">
+  <img src="IMG/trangchuUser" style="width:80%; display:block; margin:auto;">
+- Trang sản phẩm  
+  <img src="IMG/sanphamUser" style="width:80%; display:block; margin:auto;">
+- Trang aboutus 
+  <img src="IMG/aboutusUser" style="width:80%; display:block; margin:auto;">
 - Trang cart  
-  <img src="Im" style="width:80%; display:block; margin:auto;">
-- Trang profile  
-  <img src="Im" style="width:80%; display:block; margin:auto;">
+  <img src="IMG/cartUser" style="width:80%; display:block; margin:auto;">
+- Profile  
+  <img src="IMG/profileUser" style="width:80%; display:block; margin:auto;">
 
 ---
 
