@@ -215,12 +215,8 @@ Route::middleware(['auth', 'admin'])->get('admin/dashboard', function () {
 ## :framed_picture: Giao Diện Chính Website
 
 1. Giao diện Đăng nhập/ Đăng ký
-
-<div style="display: flex; gap: 16px;">
-  <img src="IMG/dangnhapp.png style="width:48%; height:320px; object-fit:cover; border:1px solid #ccc;">
-  <img src="IMG/dangky.png" style="width:48%; height:320px; object-fit:cover; border:1px solid #ccc;">
-</div>
-
+ <img src="IMG/dangnhapp.png" style="width:80%; display:block; margin:auto;">
+ <img src="IMG/dangky.png" style="width:80%; display:block; margin:auto;">
 2. Giao diện của Admin  
 - Quản lý tài khoản  
   <img src="IMG/quanlynguoidungAdmin.png" style="width:80%; display:block; margin:auto;">
@@ -245,3 +241,45 @@ Route::middleware(['auth', 'admin'])->get('admin/dashboard', function () {
 
 ---
 
+## Code và giải thích 1 số chức năng chính
+- Model cart
+  ![model cart](IMG/modelCart.png)
+  + Định nghĩa cart với các thông tin và xử lý các logic liên quan
+- Model Order
+  ![model order](IMG/modelOrder.png)
+  + Định nghĩa order với các thông tin của nó và xử lý các logic về việc giỏ hàng ở thuộc user nào, giỏ hàng có các product nào
+- Model Product
+  ![model product](IMG/modelProduct.png)
+  + Định nghĩa product với các thông tin xử lý các logic liên quan
+- Model User
+  ![model user](IMG/modelUser.png)
+  + Định nghĩa user với các thông tin và xử lý các logic liên quan
+- Controller phần đặt hàng của user
+  ![controller đặt hàng](IMG/userOrdercontroller1.png)
+  + Hàm index để trả về view cho phần order của user
+  + Hàm create là để xử lý logic ấn vào nút đặt hàng trong phần giỏ hàng
+  ![controller đặt hàng](IMG/userOrdercontroller2.png)
+  + Hàm show để gọi view cho phần xem đơn hàng
+  + Hàm destroy để xử lý logic xóa đơn hàng và gọi view phần xóa đơn hàng
+- Controller cho trang sản phẩm của user
+  ![trang sản phẩm](IMG/userProductcontroller.png)
+  + Xử lý logic lọc sản phẩm và thêm vòa giỏ hàng đồng thời trả về trang view phần giỏ hàng khi ấn nút thêm vào giỏ hàng
+- Controller phần quản lý user
+  ![quản lý user](IMG/userController.png)
+  + Trả về view quản lý user
+  + Xử lý logic cho việc sửa và xóa user
+- Controller quản lý sản phẩm cho admin
+  ![quản lý sản phẩm](IMG/adminProductcontroller1.png)
+  + Trả về view quản lý sản phẩm
+  ![quản lý sản phẩm](IMG/adminProductcontroller2.png)
+  + Xử lý logic các phần thêm, sửa, xóa, xem sản phẩm
+  ![quản lý sản phẩm](IMG/adminProductcontroller3.png)
+- Controller quản lý đơn hàng cho admin
+  ![đơn hàng](IMG/Admindonhang.png)
+  ![đơn hàng](IMG/Admindonhang2.png)
+  + Trả về view phần quản lý đơn hàng
+  + Xử lý logic phần sửa, xóa, xem đơn hàng
+** Liên kết
+    •	GitHub: https://github.com/nguyenquanghuyyy/shopbanquanao.git
+    •	Public Website: https://shopbanquanao.onrender.com
+    •	Link demo: https://drive.google.com/file/d/1LypnQ_CKxJzN1DvXRIUh7GEKd9IX3UIJ/view?usp=sharing
