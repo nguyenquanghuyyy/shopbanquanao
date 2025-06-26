@@ -284,6 +284,12 @@ Route::middleware(['auth', 'admin'])->get('admin/dashboard', function () {
 
 
 ** Liên kết
-    - GitHub: https://github.com/nguyenquanghuyyy/shopbanquanao.git
-    - Public Website: https://shopbanquanao.onrender.com
-    - Link demo: https://drive.google.com/file/d/1LypnQ_CKxJzN1DvXRIUh7GEKd9IX3UIJ/view?usp=sharing
+
+
+1. GitHub: https://github.com/nguyenquanghuyyy/shopbanquanao.git
+2. Public Website: https://shopbanquanao.onrender.com
+3. Link demo: https://drive.google.com/file/d/1LypnQ_CKxJzN1DvXRIUh7GEKd9IX3UIJ/view?usp=sharing
+4. Vì link public website không thể tồn tại lâu nên nếu không dùng được link public thì thầy cô hãy copy repo trên github về máy và thực hiện các bước sau
+- xóa file dockerfile, chỉnh sửa các dòng sau trong env APP_DEBUG=false APP_URL=http://localhost APP_ENV=local
+- và chạy các dòng sau trong terminal composer install php artisan key:generate php artisan serve
+
