@@ -117,7 +117,7 @@ php artisan serve
 - Admin quản lý tài khoản (CRUD)  
   ![Quản lý tài khoản](IMG/adminCRUDtaikhoan.png)
 - Admin quản lý danh sách đơn hàng  
-  ![Quản lý danh sách đơn hàng](IMG/adminquanlydonhang)
+  ![Quản lý danh sách đơn hàng](IMG/adminquanlydonhang.png)
 - User xem sản phẩm  
   ![User xem sản phẩm](IMG/userxemsanpham.png)
 - User mua hàng, đặt hàng, thanh toán  
@@ -144,10 +144,10 @@ php artisan serve
 - **Models**  
   ![Models](IMG/model.png)
 - **Views**  
-  ![Views](IMG/view)
+  ![Views](IMG/view.png)
 
 
-### :globe_with_meridians: Routes
+### Routes
 
 ```php
 
@@ -218,30 +218,30 @@ Route::middleware(['auth', 'admin'])->get('admin/dashboard', function () {
 
 <div style="display: flex; gap: 16px;">
   <img src="IMG/dangnhapp.png style="width:48%; height:320px; object-fit:cover; border:1px solid #ccc;">
-  <img src="IMG/dangki.png" style="width:48%; height:320px; object-fit:cover; border:1px solid #ccc;">
+  <img src="IMG/dangky.png" style="width:48%; height:320px; object-fit:cover; border:1px solid #ccc;">
 </div>
 
 2. Giao diện của Admin  
 - Quản lý tài khoản  
-  <img src="IMG/quanlynguoidungAdmin" style="width:80%; display:block; margin:auto;">
+  <img src="IMG/quanlynguoidungAdmin.png" style="width:80%; display:block; margin:auto;">
 - Quản lý đơn hàng  
-  <img src="IMG/quanlydonhangAdmin" style="width:80%; display:block; margin:auto;">
+  <img src="IMG/quanlydonhangAdmin.png" style="width:80%; display:block; margin:auto;">
 - Quản lý sản phẩm  
-  <img src="IMG/quanlysanphamAdmin" style="width:80%; display:block; margin:auto;">
+  <img src="IMG/quanlysanphamAdmin.png" style="width:80%; display:block; margin:auto;">
 - Profile
-  <img src="IMG/profileAdmin" style="width:80%; display:block; margin:auto;">
+  <img src="IMG/profileAdmin.png" style="width:80%; display:block; margin:auto;">
 
 3. Giao diện của User  
 - Trang chủ  
-  <img src="IMG/trangchuUser" style="width:80%; display:block; margin:auto;">
+  <img src="IMG/trangchuUser.png" style="width:80%; display:block; margin:auto;">
 - Trang sản phẩm  
-  <img src="IMG/sanphamUser" style="width:80%; display:block; margin:auto;">
+  <img src="IMG/sanphamUser.png" style="width:80%; display:block; margin:auto;">
 - Trang aboutus 
-  <img src="IMG/aboutusUser" style="width:80%; display:block; margin:auto;">
+  <img src="IMG/aboutusUser.png" style="width:80%; display:block; margin:auto;">
 - Trang cart  
-  <img src="IMG/cartUser" style="width:80%; display:block; margin:auto;">
+  <img src="IMG/cartUser.png" style="width:80%; display:block; margin:auto;">
 - Profile  
-  <img src="IMG/profileUser" style="width:80%; display:block; margin:auto;">
+  <img src="IMG/profileUser.png" style="width:80%; display:block; margin:auto;">
 
 ---
 
