@@ -255,7 +255,7 @@ Route::middleware(['auth', 'admin'])->get('admin/dashboard', function () {
   ![model user](IMG/modelUser.png)
   + Định nghĩa user với các thông tin và xử lý các logic liên quan
 - Controller phần đặt hàng của user
-  ![controller đặt hàng](IMG/userOrdercontroller1.png)
+  ![controller đặt hàng](IMG/userOrdercontoller1.png)
   + Hàm index để trả về view cho phần order của user
   + Hàm create là để xử lý logic ấn vào nút đặt hàng trong phần giỏ hàng
   ![controller đặt hàng](IMG/userOrdercontroller2.png)
@@ -276,10 +276,14 @@ Route::middleware(['auth', 'admin'])->get('admin/dashboard', function () {
   ![quản lý sản phẩm](IMG/adminProductcontroller3.png)
 - Controller quản lý đơn hàng cho admin
   ![đơn hàng](IMG/Admindonhang.png)
-  ![đơn hàng](IMG/Admindonhang2.png)
+  ![đơn hàng](IMG/admindonhang2.png)
   + Trả về view phần quản lý đơn hàng
   + Xử lý logic phần sửa, xóa, xem đơn hàng
+ 
+---
+
+
 ** Liên kết
-    •	GitHub: https://github.com/nguyenquanghuyyy/shopbanquanao.git
-    •	Public Website: https://shopbanquanao.onrender.com
-    •	Link demo: https://drive.google.com/file/d/1LypnQ_CKxJzN1DvXRIUh7GEKd9IX3UIJ/view?usp=sharing
+    - GitHub: https://github.com/nguyenquanghuyyy/shopbanquanao.git
+    - Public Website: https://shopbanquanao.onrender.com
+    - Link demo: https://drive.google.com/file/d/1LypnQ_CKxJzN1DvXRIUh7GEKd9IX3UIJ/view?usp=sharing
